@@ -74,19 +74,6 @@ int main()
 			
 		}
 		
-		
-		/*
-		for (int i = 0; i < line_up.size(); ++i)
-			line_up[i]->work_out();
-		for (int i = 0; i < line_up.size(); ++i)
-			delete line_up[i];
-		
-		*/
-
-
-		//string s1 = "you chose to " + CustomerUse + ".\n";
-		//std::cout << s1;
-		//Elliptical();
 	}
 }
 

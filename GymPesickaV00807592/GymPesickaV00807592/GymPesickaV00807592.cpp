@@ -7,15 +7,6 @@
 #include <vector>
 using namespace std;
 
-void Elliptical (){
-
-	std::cout << "You use the elliptical";
-}
-
-void Treadmill() {
-
-	std::cout << "You run on the treadmill";
-}
 
 class Exercise {
 public:
@@ -27,7 +18,7 @@ class Factory {
 public:
 	static Exercise* choose_exercise(int choice);
 private:
-	static Exercise* s_prototypes[4];
+	static Exercise* exercise_prototypes[5];
 };
 
 void menu() {
@@ -38,49 +29,61 @@ void menu() {
 	std::cout << "2) Treadmill\n";
 	std::cout << "3) Exercise Bike\n";
 	std::cout << "4) Weight Room\n";
-	std::cout << "If you'd like to leave, please use exit by typing E.\n";
+	std::cout << "If you'd like to leave, please use exit by typing 0.\n";
 	std::cout << "Your selection: ";
 
 }
 
 int main()
 {
-	std::vector<int> line_up;
-	string CustomerUse;
+	std::vector<Exercise*> line_up;
+	int CustomerUse;
 
 	menu();
 	while (true) {
 
 		
-		getline(cin, CustomerUse);
-		if (CustomerUse == "1") {
-			std::cout << "You chose to run on the Elliptical.\n";
+		cin >> CustomerUse;
+		if (CustomerUse == 1) {
+			std::cout << "You booked your time on the elliptical\n";
+			line_up.push_back(Factory::choose_exercise(CustomerUse));
 		}
-		else if (CustomerUse == "2") {
-			std::cout << "You chose to run on the Treadmill.\n";
+		else if (CustomerUse == 2) {
+			std::cout << "You booked your time on the Treadmill.\n";
+			line_up.push_back(Factory::choose_exercise(CustomerUse));
 		}
-		else if (CustomerUse == "3") {
-			std::cout << "You chose to ride the Exercise Bike.\n";
+		else if (CustomerUse == 3) {
+			std::cout << "You booked your time on the Exercise Bike.\n";
+			line_up.push_back(Factory::choose_exercise(CustomerUse));
 		}
-		else if (CustomerUse == "4") {
-			std::cout << "You chose to work out in the Weight Room.\n";
+		else if (CustomerUse == 4) {
+			std::cout << "You booked your time in the Weight Room.\n";
+			line_up.push_back(Factory::choose_exercise(CustomerUse));
 		}
-		else if (CustomerUse == "E") {
-			std::cout << "Thank you for chosing our gym for your exercise needs!\n" << endl << endl;
+		else if (CustomerUse == 0) {
+			for (int i = 0; i < line_up.size(); ++i)
+				line_up[i]->work_out();
+			for (int i = 0; i < line_up.size(); ++i)
+				delete line_up[i];
+			std::cout << "Thank you for choosing our gym for your exercise needs!\n" << endl << endl;
+			system("PAUSE");
 			exit(0);
 		}
 		else {
 			std::cout << "I'm sorry, that is an invalid input, please try again.\n";
+			
 		}
+		
+		
 		/*
-		roles.push_back(
-			Factory::choose_exercise(choice));
-
 		for (int i = 0; i < line_up.size(); ++i)
 			line_up[i]->work_out();
 		for (int i = 0; i < line_up.size(); ++i)
 			delete line_up[i];
-			*/
+		
+		*/
+
+
 		//string s1 = "you chose to " + CustomerUse + ".\n";
 		//std::cout << s1;
 		//Elliptical();
@@ -108,11 +111,20 @@ public:
 		cout << "You rode on the exercise bike, generate some power!\n";
 	}
 };
-
-Exercise* Factory::s_prototypes[] = {
-	0, new theElliptical, new theTreadmill, new ExerciseBike
+class WeightRoom : public Exercise {
+public:
+	Exercise*   clone() { return new WeightRoom; }
+	void work_out() {
+		cout << "You worked out in the weight room, pump the iron!\n";
+	}
 };
-Exercise* Factory::choose_exercise(int choice) {
-	return s_prototypes[choice]->clone();
-}
+Exercise* Factory::choose_exercise(int CustomerUse) {
+	return exercise_prototypes[CustomerUse]->clone();
+};
+
+Exercise* Factory::exercise_prototypes[] = {
+	0, new theElliptical, new theTreadmill, new ExerciseBike, new WeightRoom
+};
+
+
 

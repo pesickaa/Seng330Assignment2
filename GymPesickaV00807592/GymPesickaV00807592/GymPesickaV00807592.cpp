@@ -1,7 +1,7 @@
-// GymPesickaV00807592.cpp : Defines the entry point for the console application.
-// Alexis Pesicka
-// V00807592
-//
+/** GymPesickaV00807592.cpp : Defines the entry point for the console application.
+* Alexis Pesicka
+* V00807592
+*/
 
 #include "stdafx.h"
 #include <iostream>
@@ -12,9 +12,8 @@ using namespace std;
 
 class Exercise {
 protected:
-	//string ExerciseName;
+	/**string ExerciseName;*/
 public:
-	//Exercise(ExerciseName* parent = 0); //pass parent to QObject's c-tor in the definition of your c-tor
 	virtual Exercise* clone() = 0;
 	virtual void work_out() = 0;
 	
@@ -24,6 +23,7 @@ class Factory {
 public:
 	static Exercise* choose_exercise(int choice);
 private:
+	/**The array that holds the prototypes for each of the exercises. */
 	static Exercise* exercise_prototypes[5];
 };
 
@@ -42,47 +42,54 @@ void menu() {
 
 int main()
 {
-	std::vector<Exercise*> line_up; //This vector holds the exercise lineup the client has selected
-	int CustomerUse; //An int that helps us keep everything orderly as each exercise is assigned a number
-	string CustomerSelect;//The Client's selection to be compared to the items available
-	menu();//Our menu
-	string userExerciseName;//The name the client is assigning their selected machine
+	/**This vector holds the exercise lineup the client has selected*/
+	std::vector<Exercise*> line_up; 
+	/**An int that helps us keep everything orderly as each exercise is assigned a number*/
+	int CustomerUse; 
+	/**The Client's selection to be compared to the items available*/
+	string CustomerSelect;
+	/**The menu that the Client sees upon startig the program. Also can be called at any time.*/
+	menu();
+	/**The name the client is assigning their selected machine*/
+	string userExerciseName;
 		
 	for (;;) {		
 		std::cout << "Your selection: ";
-		getline(std::cin, CustomerSelect); //Accepts a full line of information to accomodate Weight Room and Exercise Bike
+		/**Accepts a full line of information to accomodate Weight Room and Exercise Bike*/
+		getline(std::cin, CustomerSelect); 
 
-		//These are the selections that the client can chose from. 
-		//Currently, the naming system doesn't work, and causes the whole program to crash after the first confirmation has passed. 
+		/**These are the selections that the client can chose from. 
+		*Currently, the naming system doesn't work, and causes the whole program to crash after the first confirmation has passed.*/ 
 		if (CustomerSelect == "Elliptical") {
 			CustomerUse = 1;
 			std::cout << "You booked your time on the elliptical\n";
-			//std::cout << "What would you like to name your exercise? ";
-			//cin >> userExerciseName;
+			/**std::cout << "What would you like to name your exercise? ";
+			*cin >> userExerciseName;*/
 			line_up.push_back(Factory::choose_exercise(CustomerUse));
-			//line_up[0]->ExerciseName=userExerciseName;
+			/**line_up[0]->ExerciseName=userExerciseName;*/
 		}else if (CustomerSelect == "Treadmill") {
 			CustomerUse = 2;
 			std::cout << "You booked your time on the Treadmill.\n";
-			//std::cout << "What would you like to name your exercise? ";
-			//cin >> userExerciseName;
+			/**std::cout << "What would you like to name your exercise? ";
+			*cin >> userExerciseName;*/
 			line_up.push_back(Factory::choose_exercise(CustomerUse));
-			//line_up[0]->ExerciseName = userExerciseName;
+			/**line_up[0]->ExerciseName = userExerciseName;*/
 		}else if (CustomerSelect == "Exercise Bike") {
 			CustomerUse = 3;
 			std::cout << "You booked your time on the Exercise Bike.\n";
-			//std::cout << "What would you like to name your exercise? ";
-			//cin >> userExerciseName;
+			/**std::cout << "What would you like to name your exercise? ";
+			*cin >> userExerciseName;*/
 			line_up.push_back(Factory::choose_exercise(CustomerUse));
-			//line_up[0]->ExerciseName = userExerciseName;
+			/**line_up[0]->ExerciseName = userExerciseName;*/
 		}else if (CustomerSelect == "Weight Room") {
 			CustomerUse = 4;
 			std::cout << "You booked your time in the Weight Room.\n";
-			//std::cout << "What would you like to name your exercise? ";
-			//cin >> userExerciseName;
+			/**std::cout << "What would you like to name your exercise? ";
+			*cin >> userExerciseName;*/
 			line_up.push_back(Factory::choose_exercise(CustomerUse));
-			//line_up[0]->ExerciseName = userExerciseName;
-		}else if (CustomerSelect == "Confirm") {//Confirms the selections the client has made. Can be singular or multiple selections.
+			/**line_up[0]->ExerciseName = userExerciseName;*/
+		}else if (CustomerSelect == "Confirm") {
+			/**Confirms the selections the client has made. Can be singular or multiple selections.*/
 			CustomerUse = 0;
 			for (int i = 0; i < line_up.size(); ++i)
 				line_up[i]->work_out();
@@ -92,11 +99,13 @@ int main()
 			}
 		}else if (CustomerSelect == "Exit"){
 			std::cout << "Thank you for choosing our gym for your exercise needs!\n" << endl << endl;
-			system("PAUSE");//Allows the client to see the close statement.
+			/**Allows the client to see the close statement.*/
+			system("PAUSE");
 			exit(0);
 		}
 		else if (CustomerSelect == "Menu") {
-			menu();//Prints menu
+			/**Prints the menu at client's request.*/
+			menu();//!*Prints menu
 
 		}else {
 			std::cout << "I'm sorry, that is an invalid input, please try again.\n";

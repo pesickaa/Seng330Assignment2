@@ -1,45 +1,16 @@
-﻿Build started 11/15/2015 4:52:32 PM.
+﻿Build started 11/15/2015 9:31:10 PM.
      1>Project "C:\Users\Alexis\Documents\GitHub\Seng330Assignment2\GymPesickaV00807592\GymPesickaV00807592\GymPesickaV00807592.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\GymPesickaV00807592.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt GymPesickaV00807592.cpp
          GymPesickaV00807592.cpp
-     1>c:\users\alexis\documents\github\seng330assignment2\gympesickav00807592\gympesickav00807592\gympesickav00807592.cpp(87): warning C4018: '<': signed/unsigned mismatch
-     1>c:\users\alexis\documents\github\seng330assignment2\gympesickav00807592\gympesickav00807592\gympesickav00807592.cpp(91): error C2679: binary '<<': no operator found which takes a right-hand operand of type 'Exercise' (or there is no acceptable conversion)
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(497): note: could be 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(477): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(457): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(437): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(417): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(396): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(376): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(355): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(335): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(315): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(290): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(270): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(236): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(216): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(209): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(202): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(196): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(1021): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(983): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>,Exercise>(std::basic_ostream<char,std::char_traits<char>> &&,const _Ty &)'
-                 with
-                 [
-                     _Ty=Exercise
-                 ]
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(973): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(966): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(959): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(952): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(826): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(779): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(741): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)'
-         e:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(694): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
-         c:\users\alexis\documents\github\seng330assignment2\gympesickav00807592\gympesickav00807592\gympesickav00807592.cpp(91): note: while trying to match the argument list '(std::ostream, Exercise)'
-     1>c:\users\alexis\documents\github\seng330assignment2\gympesickav00807592\gympesickav00807592\gympesickav00807592.cpp(92): warning C4018: '<': signed/unsigned mismatch
-     1>Done Building Project "C:\Users\Alexis\Documents\GitHub\Seng330Assignment2\GymPesickaV00807592\GymPesickaV00807592\GymPesickaV00807592.vcxproj" (Build target(s)) -- FAILED.
+     1>c:\users\alexis\documents\github\seng330assignment2\gympesickav00807592\gympesickav00807592\gympesickav00807592.cpp(89): warning C4018: '<': signed/unsigned mismatch
+     1>c:\users\alexis\documents\github\seng330assignment2\gympesickav00807592\gympesickav00807592\gympesickav00807592.cpp(94): warning C4018: '<': signed/unsigned mismatch
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Alexis\Documents\GitHub\Seng330Assignment2\GymPesickaV00807592\Debug\GymPesickaV00807592.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Alexis\Documents\GitHub\Seng330Assignment2\GymPesickaV00807592\Debug\GymPesickaV00807592.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Alexis\Documents\GitHub\Seng330Assignment2\GymPesickaV00807592\Debug\GymPesickaV00807592.lib" /MACHINE:X86 Debug\GymPesickaV00807592.obj
+         Debug\stdafx.obj
+         GymPesickaV00807592.vcxproj -> C:\Users\Alexis\Documents\GitHub\Seng330Assignment2\GymPesickaV00807592\Debug\GymPesickaV00807592.exe
+     1>Done Building Project "C:\Users\Alexis\Documents\GitHub\Seng330Assignment2\GymPesickaV00807592\GymPesickaV00807592\GymPesickaV00807592.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:00.23
+Time Elapsed 00:00:00.52

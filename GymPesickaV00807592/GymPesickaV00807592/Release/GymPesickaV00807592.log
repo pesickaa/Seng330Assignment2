@@ -1,21 +1,23 @@
-﻿Build started 11/15/2015 2:04:28 AM.
-     1>Project "E:\Seng330\GymPesickaV00807592\GymPesickaV00807592\GymPesickaV00807592.vcxproj" on node 2 (Build target(s)).
+﻿Build started 11/15/2015 4:59:01 PM.
+     1>Project "C:\Users\Alexis\Documents\GitHub\Seng330Assignment2\GymPesickaV00807592\GymPesickaV00807592\GymPesickaV00807592.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"Release\GymPesickaV00807592.pch" /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
          stdafx.cpp
          E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Release\GymPesickaV00807592.pch" /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt GymPesickaV00807592.cpp
          GymPesickaV00807592.cpp
-     1>GymPesickaV00807592.cpp(64): warning C4018: '<': signed/unsigned mismatch
-     1>GymPesickaV00807592.cpp(66): warning C4018: '<': signed/unsigned mismatch
+     1>GymPesickaV00807592.cpp(87): warning C4018: '<': signed/unsigned mismatch
+     1>GymPesickaV00807592.cpp(92): warning C4018: '<': signed/unsigned mismatch
        Link:
-         E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Seng330\GymPesickaV00807592\Release\GymPesickaV00807592.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"E:\Seng330\GymPesickaV00807592\Release\GymPesickaV00807592.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Seng330\GymPesickaV00807592\Release\GymPesickaV00807592.lib" /MACHINE:X86 /SAFESEH Release\GymPesickaV00807592.obj
+         E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Alexis\Documents\GitHub\Seng330Assignment2\GymPesickaV00807592\Release\GymPesickaV00807592.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Alexis\Documents\GitHub\Seng330Assignment2\GymPesickaV00807592\Release\GymPesickaV00807592.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Alexis\Documents\GitHub\Seng330Assignment2\GymPesickaV00807592\Release\GymPesickaV00807592.lib" /MACHINE:X86 /SAFESEH Release\GymPesickaV00807592.obj
          Release\stdafx.obj
          Generating code
-         All 93 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+         202 of 203 functions (99.5%) were compiled, the rest were copied from previous compilation.
+           111 functions were new in current compilation
+           0 functions had inline decision re-evaluated but remain unchanged
          Finished generating code
-         GymPesickaV00807592.vcxproj -> E:\Seng330\GymPesickaV00807592\Release\GymPesickaV00807592.exe
-     1>Done Building Project "E:\Seng330\GymPesickaV00807592\GymPesickaV00807592\GymPesickaV00807592.vcxproj" (Build target(s)).
+         GymPesickaV00807592.vcxproj -> C:\Users\Alexis\Documents\GitHub\Seng330Assignment2\GymPesickaV00807592\Release\GymPesickaV00807592.exe
+     1>Done Building Project "C:\Users\Alexis\Documents\GitHub\Seng330Assignment2\GymPesickaV00807592\GymPesickaV00807592\GymPesickaV00807592.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.71
+Time Elapsed 00:00:01.75

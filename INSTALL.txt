@@ -1,0 +1,5 @@
+This is the install.txt file for Assignment 2
+
+This assignment is being provided with all the project files for Visual Studio, as well as the GymPesickav00807592.cpp file which has all of the code which I wrote myself. It compiled fine within the Visual Studio environment. The .cpp file will be located within the file path GitHub\Seng330Assignment2\GymPesickaV00807592\GymPesickaV00807592 and is where all of my code can be located. I found that using Visual Studio for the first time was a very trying experience.  
+
+I am honestly fairly uncertain as to what else I need to provide in an install.txt type file. 
